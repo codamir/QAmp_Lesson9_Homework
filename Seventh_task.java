@@ -36,6 +36,7 @@ public class Seventh_task {
             longerArray[i]=shorterArray[i]+ longerArray[i];
         }
 
+        System.out.print("Output: ");
         for (int i=0;i<longerArray.length;i++){
             System.out.print(longerArray[i] + " ");
         }
