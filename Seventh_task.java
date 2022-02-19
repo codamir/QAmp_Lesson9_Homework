@@ -13,7 +13,6 @@ public class Seventh_task {
 
         if (secondArray.length<firstArray.length){
             System.out.println("Second array must be larger than first array. Please try again.");
-
         }
 
         System.out.println("Now please type the numbers for the first array: ");
@@ -21,7 +20,6 @@ public class Seventh_task {
         int counterOne= 0;
 
         for (int i=0;i<firstArray.length;i++){
-
             System.out.println("Enter " + (++counterOne) + "."+" number:");
             firstArray[i]= reader.nextInt();
         }
@@ -31,7 +29,6 @@ public class Seventh_task {
         int counterTwo= 0;
 
         for (int i=0;i<secondArray.length;i++){
-
             System.out.println("Enter " + (++counterTwo) + "."+" number:");
             secondArray[i]= reader.nextInt();
         }
@@ -40,12 +37,17 @@ public class Seventh_task {
 
         for (int i=0;i<newSumArray.length;i++){
             newSumArray[i]=firstArray[i]+secondArray[i];
-
-            System.out.print(newSumArray[i]+",");
-
         }
+
+        int[] arrayLeftOver = Arrays.copyOfRange(secondArray,firstArray.length,secondArray.length);
+//      Ovom metodom sam pokusao kopirati ostatak od kraja prvog niza (jer ce se do tog indeksa sabirati nizovi),
+//      do kraja drugog niza dokle se trebaju prepisati brojevi koji nisu sabrani.
+
+//      Kada isprintam, dobijem rezultat, ali sam za sada jedino uspio ovako u stringovima dobiti, sa uglastim zagradama.
+        System.out.print(Arrays.toString(newSumArray)+ Arrays.toString(arrayLeftOver));
     }
 }
+
 
 
 //    NApravite program koji ce sabrati dva niza zajedno, ukoliko je jedan niz veci od drugog
