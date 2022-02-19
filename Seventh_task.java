@@ -48,8 +48,6 @@ public class Seventh_task {
     }
 }
 
-
-
-//    NApravite program koji ce sabrati dva niza zajedno, ukoliko je jedan niz veci od drugog
+//    Napravite program koji ce sabrati dva niza zajedno, ukoliko je jedan niz veci od drugog
 //    taj broj se samo prepise .
 //    Npr: {1,3,5,6} , {1,1,1,1,1,1,1}Output: 2,4,6,7,1,1,1/
