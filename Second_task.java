@@ -1,4 +1,3 @@
-import javax.naming.NamingEnumeration;
 import java.util.Scanner;
 
 public class Second_task {
