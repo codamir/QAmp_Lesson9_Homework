@@ -17,16 +17,22 @@ public class Seventh_task {
         }
 
         System.out.println("Now please type the numbers for the first array: ");
+
+        int counterOne= 0;
+
         for (int i=0;i<firstArray.length;i++){
-            int counter = 0;
-            System.out.println("Enter " + (++counter) + "."+" number:");
+
+            System.out.println("Enter " + (++counterOne) + "."+" number:");
             firstArray[i]= reader.nextInt();
         }
 
         System.out.println("Now please type the numbers for the second array: ");
+
+        int counterTwo= 0;
+
         for (int i=0;i<secondArray.length;i++){
-            int counter = 0;
-            System.out.println("Enter " + (++counter) + "."+" number:");
+
+            System.out.println("Enter " + (++counterTwo) + "."+" number:");
             secondArray[i]= reader.nextInt();
         }
 
@@ -34,6 +40,7 @@ public class Seventh_task {
 
         for (int i=0;i<newSumArray.length;i++){
             newSumArray[i]=firstArray[i]+secondArray[i];
+
             System.out.print(newSumArray[i]+",");
 
         }
