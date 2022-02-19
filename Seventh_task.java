@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Seventh_task {
@@ -33,20 +32,13 @@ public class Seventh_task {
             secondArray[i]= reader.nextInt();
         }
 
-        int[] newSumArray = new int[secondArray.length-1];
-
-        for (int i=0;i<newSumArray.length;i++){
-            newSumArray[i]=firstArray[i]+secondArray[i];
+        for (int i=0;i<firstArray.length;i++){
+            firstArray[i] = firstArray[i] + secondArray[i];
+            System.out.println(firstArray[i]);
         }
-
-        int[] arrayLeftOver = Arrays.copyOfRange(secondArray,firstArray.length,secondArray.length);
-//      Ovom metodom sam pokusao kopirati ostatak od kraja prvog niza (jer ce se do tog indeksa sabirati nizovi),
-//      do kraja drugog niza dokle se trebaju prepisati brojevi koji nisu sabrani.
-
-//      Kada isprintam, dobijem rezultat, ali sam za sada jedino uspio ovako u stringovima dobiti, sa uglastim zagradama.
-        System.out.print(Arrays.toString(newSumArray)+ Arrays.toString(arrayLeftOver));
     }
 }
+
 
 //    Napravite program koji ce sabrati dva niza zajedno, ukoliko je jedan niz veci od drugog
 //    taj broj se samo prepise .
